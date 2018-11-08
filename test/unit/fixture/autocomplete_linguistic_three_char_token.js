@@ -18,6 +18,16 @@ module.exports = {
         }
       }],
       'should':[{
+        'match': {
+          'phrase.default': {
+            'analyzer': 'peliasPhrase',
+            'boost': 1,
+            'query': 'tes',
+            'slop': 3,
+            'type': 'phrase'
+          }
+        }
+      },{
         'function_score': {
           'query': {
             'match_all': {}

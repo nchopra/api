@@ -1,5 +1,5 @@
 # base image
-FROM pelias/baseimage
+FROM pelias/baseimage:cleanup-nave
 USER pelias
 
 # Where the app is built and run inside the docker fs
